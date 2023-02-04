@@ -23,5 +23,5 @@ int main() {
 void *square(const void *num) {
   static int result;
   result = (*(int *)num) * (*(int *)num);
-  return (result);
+  return (&result);
 }
